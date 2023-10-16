@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b413607cc40e36145b71b530167e2e29, type: 3}
+  m_Name: PlayerData_SO
+  m_EditorClassIdentifier: 
+  playerName: 
+  playerIcon: {fileID: 0}
+  playerOnWorldSprite: {fileID: 0}
+  playerDescription: 
+  playerNutrition: 5000
+  playerTired: 0
+  playerEmotion: 0
+  playerPressure: 0
+  playerPain: 0
+  playerConfidence: 0
+  playerConcentration: 5000
+  playerCharm: 0
+  playerGlamour: 0
+  playerClimax: 0
+  fatigueStateType: 1
+  starvationType: 0
+  painStateType: 0
+  abnormalStateType: 0
+  beautiful: 0
+  beautifulLevel: 0
+  physicalFitness: 0
+  physicalFitnessLevel: 0
+  volition: 0
+  volitionLevel: 0
+  dominate: 0
+  dominateLevel: 0
+  knowledge: 0
+  knowledgeLevel: 0
+  promiscuous: 0
+  promiscuousLevel: 0
+  exhibitionism: 0
+  exhibitionismLevel: 0
+  xenogenesis: 0
+  xenogenesisLevel: 0
+  trackFieldSkill: 0
+  trackFieldSkillLevel: 0
+  danceSkill: 0
+  danceSkillLevel: 0
+  houseworkSkill: 0
+  houseworkSkillLevel: 0
+  cultivateSkill: 0
+  cultivateSkillLevel: 0
+  nurseSkill: 0
+  nurseSkillLevel: 0
+  identifySkill: 0
+  identifySkillLevel: 0
+  mechanicSkill: 0
+  mechanicSkillLevel: 0
+  deceiveSkill: 0
+  deceiveSkillLevel: 0
+  stealSkill: 0
+  stealSkillLevel: 0
+  literature: 0
+  literatureLevel: 0
+  mathematics: 0
+  mathematicsLevel: 0
+  science: 0
+  scienceLevel: 0
+  history: 0
+  historyLevel: 0
+  geography: 0
+  geographyLevel: 0
+  oralTechnique: 0
+  oralTechniqueLevel: 0
+  chestTechnique: 0
+  chestTechniqueLevel: 0
+  chiralityTechnique: 0
+  chiralityTechniqueLevel: 0
+  pudendalTechnique: 0
+  pudendalTechniqueLevel: 0
+  vestibularTechnique: 0
+  vestibularTechniqueLevel: 0
+  footworkTechnique: 0
+  footworkTechniqueLevel: 0
+  experience: 0
+  level: 1
+  experienceCap: 0
+  levelRanges: []
+  isDead: 0
+  attackable: 0
+  removable: 0
+  invincible: 0
