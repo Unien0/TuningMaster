@@ -4,25 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-    public static GameManager instance;
-
-    public GameObject playerObject;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Debug.LogWarning("EXTRA" + this + "DELETED");
-            Destroy(gameObject);
-        }
-    }
-
     void Start()
     {
         
