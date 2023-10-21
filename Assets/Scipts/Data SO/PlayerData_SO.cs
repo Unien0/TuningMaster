@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerData_SO", menuName = "Data/PlayerData")]
 public class PlayerData_SO : ScriptableObject
 {
+    /// <summary>
+    /// 主角的作为调教师的属性
+    /// </summary>
     [Header("角色数据")]
     [Header("ID与头像")]
     public string playerName;
@@ -12,73 +15,55 @@ public class PlayerData_SO : ScriptableObject
     public Sprite playerOnWorldSprite;
     [Multiline]public string playerDescription;//玩家介绍
     [Space(10)]
+
+
     [Header("基础数据")]
-    [Header("营养,初始为5000")]
-    [Range(0,5000)]public int playerNutrition;//营养
-    [Header("疲劳，初始为0")]
-    [Range(0,2000)]public int playerTired;//疲劳
-    [Header("情绪，初始为0")]
-    [Range(-500,500)] public int playerEmotion;//情绪
-    [Header("压力，初始为0")]
-    [Range(0, 1000)] public int playerPressure;//压力
-    [Header("疼痛，初始为0")]
-    [Range(0, 200)] public int playerPain;//疼痛
-    [Header("信心，初始为0")]
-    [Range(-500,500)] public int playerConfidence;//信心
-    [Header("专注，初始为5000")]
-    [Range(0, 5000)] public int playerConcentration;//专注
-    [Header("魅力，初始为0")]
-    [Range(0, 5000)] public int playerCharm;//魅力
-    [Header("魅惑，初始为0")]
-    [Range(0, 5000)] public int playerGlamour;//魅惑
-    [Header("高潮，初始为0")]
-    [Range(0, 1000)] public int playerClimax;//高潮
+    [Header("体力,上限1000")]
+    [Range(0,1000)]public int playerPhysical;
+    [Header("金钱，初始为0")]
+    public int playerTired;
     [Space(10)]
+
+
     [Header("角色状态")]
-    [Header("疲劳状态，睡眠-250/h，休息-150/10min，清醒+1/min，运动（另算）")]
-    public FatigueStateType fatigueStateType;
-    [Header("营养状态，日常行动-1/min，运动或体力劳动-4/min，饥饿状态下压力随之增长")]
-    public StarvationType starvationType;
-    [Header("疼痛状态，日常行动-10/h，睡眠-20/h，治疗后-50/h，在疼痛超过100时无法战斗")]
-    public PainStateType painStateType;
     [Header("异常状态")]
     public AbnormalStateType abnormalStateType;
-
     [Space(10)]
+
+
     [Header("成长属性经验，最高经验值未定，最高等级10级")]
-    [Header("容貌，初始为0,容貌影响魅力与吸引力")]
-    public int beautiful;
-    [Range(0, 10)] public int beautifulLevel;
-    [Header("体能，初始为0，体能影响战斗")]
+    [Header("技巧，初始为0,技巧影响调教进度")]
+    public int technique;
+    [Range(0, 10)] public int techniqueLevel;
+    [Header("体能，初始为0，体能影响调教的体力消耗以及受到反抗时的压制能力")]
     public int physicalFitness;
     [Range(0, 10)] public int physicalFitnessLevel;
-    [Header("意志，初始为0，意志影响疼痛和抗性")]
+    [Header("意志，初始为0，意志影响疼痛和抗性以及受到诱惑时的压制能力")]
     public int volition;
     [Range(0, 10)] public int volitionLevel;
-    [Header("支配，初始为0，支配影响主动")]
+    [Header("支配，初始为0，支配影响主动以及减少反抗的几率")]
     public int dominate;
     [Range(0, 10)] public int dominateLevel;
-    [Header("学识，初始为0，学识影响学习能力与技术力")]
+    [Header("学识，初始为0，学识影响学习能力与技术力，能使用更多道具")]
     public int knowledge;
     [Range(0, 10)] public int knowledgeLevel;
-    [Header("淫乱，初始为0，淫乱影响色情行为时的选项和结果")]
+    [Header("淫乱，初始为0，淫乱影响色情行为时的选项和结果以及诱惑时的成功率")]
     public int promiscuous;
     [Range(0, 10)] public int promiscuousLevel;
-    [Header("露出，初始为0，露出影响露出的意愿度")]
-    public int exhibitionism;
-    [Range(0, 10)] public int exhibitionismLevel;
-    [Header("异种，初始为0，异种影响异种行为时的选项和结果")]
-    public int xenogenesis;
-    [Range(0, 10)] public int xenogenesisLevel;
     [Space(10)]
+
+
     [Header("角色技能，最高经验值未定，最高等级10级")]
-    [Header("田径跑步，初始为0")]
+    [Header("田径跑步，初始为0，增加抓捕时的成功率")]
     public int trackFieldSkill;
     [Range(0, 10)] public int trackFieldSkillLevel;
-    [Header("舞蹈，初始为0")]
-    public int danceSkill;
-    [Range(0, 10)] public int danceSkillLevel;
-    [Header("家务，初始为0")]
+    [Header("口才，初始为0，增加诱拐，欺骗的成功率")]
+    public int eloquence;
+    [Range(0, 10)] public int eloquenceSkillLevel;
+    [Header("隐匿，初始为0，增加尾随，逃跑的成功率")]
+    public int concealment;
+    [Range(0, 10)] public int concealmentSkillLevel;
+    [Header("家务，初始为0，需要时常打扫来保证npc不会得病")]
     public int houseworkSkill;
     [Range(0, 10)] public int houseworkSkillLevel;
     [Header("种植，初始为0")]
@@ -90,52 +75,20 @@ public class PlayerData_SO : ScriptableObject
     [Header("鉴定，初始为0")]
     public int identifySkill;
     [Range(0, 10)] public int identifySkillLevel;
-    [Header("机械师，初始为0")]
-    public int mechanicSkill;
-    [Range(0, 10)] public int mechanicSkillLevel;
-    [Header("欺骗，初始为0")]
-    public int deceiveSkill;
-    [Range(0, 10)] public int deceiveSkillLevel;
-    [Header("偷窃，初始为0")]
-    public int stealSkill;
-    [Range(0, 10)] public int stealSkillLevel;
     [Space(10)]
-    [Header("学历等级，最高经验值未定，最高等级10级")]
-    [Header("文学，初始为0")]
-    public int literature;
-    [Range(0, 10)] public int literatureLevel;
-    [Header("数学，初始为0")]
-    public int mathematics;
-    [Range(0, 10)] public int mathematicsLevel;
-    [Header("科学，初始为0")]
-    public int science;
-    [Range(0, 10)] public int scienceLevel;
-    [Header("历史，初始为0")]
-    public int history;
-    [Range(0, 10)] public int historyLevel;
-    [Header("地理，初始为0")]
-    public int geography;
-    [Range(0, 10)] public int geographyLevel;
-    [Space(10)]
+
+
     [Header("性技，最高经验值未定，最高等级10级")]
     [Header("口，初始为0")]
     public int oralTechnique;
     [Range(0, 10)] public int oralTechniqueLevel;
-    [Header("胸，初始为0")]
-    public int chestTechnique;
-    [Range(0, 10)] public int chestTechniqueLevel;
     [Header("手，初始为0")]
     public int chiralityTechnique;
     [Range(0, 10)] public int chiralityTechniqueLevel;
     [Header("阴部，初始为0")]
     public int pudendalTechnique;
     [Range(0, 10)] public int pudendalTechniqueLevel;
-    [Header("后庭，初始为0")]
-    public int vestibularTechnique;
-    [Range(0, 10)] public int vestibularTechniqueLevel;
-    [Header("脚，初始为0")]
-    public int footworkTechnique;
-    [Range(0, 10)] public int footworkTechniqueLevel;
+
 
 
 

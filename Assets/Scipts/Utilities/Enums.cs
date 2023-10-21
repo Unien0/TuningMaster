@@ -11,6 +11,8 @@ public enum ItemType
 
 }
 
+
+//目前主要是改变女性角色的状态
 public enum FatigueStateType
 {
     Sleep,Rest,Sober, Motion
@@ -29,9 +31,10 @@ public enum PainStateType
     //正常，战败，难以移动，无法行动，昏迷
 }
 
+//主角的状态
 public enum AbnormalStateType
 {
     Normal,
-    Coma,Stupor,Fetter, Charm
-    //昏迷，恍惚，束缚，魅惑
+    Depression, Fatigue, Enthusiasm
+    //沮丧、疲倦、狂热
 }
