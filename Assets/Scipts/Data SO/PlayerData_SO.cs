@@ -66,28 +66,34 @@ public class PlayerData_SO : ScriptableObject
     [Header("家务，初始为0，需要时常打扫来保证npc不会得病")]
     public int houseworkSkill;
     [Range(0, 10)] public int houseworkSkillLevel;
-    [Header("种植，初始为0")]
-    public int cultivateSkill;
-    [Range(0, 10)] public int cultivateSkillLevel;
-    [Header("照护，初始为0")]
+    [Header("照护，初始为0，用来照顾受伤与得病的npc")]
     public int nurseSkill;
     [Range(0, 10)] public int nurseSkillLevel;
-    [Header("鉴定，初始为0")]
+    [Header("鉴定，初始为0，用于在黑市发掘能力更高的npc")]
     public int identifySkill;
     [Range(0, 10)] public int identifySkillLevel;
     [Space(10)]
 
 
-    [Header("性技，最高经验值未定，最高等级10级")]
+    [Header("性技，最高经验值未定，最高等级10级。用于提升相关部位的调教程度")]
     [Header("口，初始为0")]
     public int oralTechnique;
     [Range(0, 10)] public int oralTechniqueLevel;
+    [Header("胸，初始为0")]
+    public int chestTechnique;
+    [Range(0, 10)] public int chestTechniqueLevel;
     [Header("手，初始为0")]
     public int chiralityTechnique;
     [Range(0, 10)] public int chiralityTechniqueLevel;
     [Header("阴部，初始为0")]
     public int pudendalTechnique;
     [Range(0, 10)] public int pudendalTechniqueLevel;
+    [Header("后庭，初始为0")]
+    public int vestibularTechnique;
+    [Range(0, 10)] public int vestibularTechniqueLevel;
+    [Header("脚，初始为0")]
+    public int footworkTechnique;
+    [Range(0, 10)] public int footworkTechniqueLevel;
 
 
 

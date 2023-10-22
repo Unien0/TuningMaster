@@ -13,22 +13,44 @@ public enum ItemType
 
 
 //目前主要是改变女性角色的状态
+
+/// <summary>
+/// 行为状态
+/// </summary>
 public enum FatigueStateType
 {
-    Sleep,Rest,Sober, Motion
-    //睡眠，休息，清醒，运动（根据事件决定消耗）
+    Rest,Sober, Motion
+    //休息，清醒，调教中
 }
 
+/// <summary>
+/// 饥饿状态
+/// </summary>
 public enum StarvationType
 {
     Satiety,Hunger, Malnutrition, HungryDizziness
     //饱腹，饥饿，营养不良，饿晕
 }
 
+/// <summary>
+/// 调教时状态
+/// </summary>
 public enum PainStateType
 {
-    Normal,Defeat, DifficultMove, Incapacitated, Coma
-    //正常，战败，难以移动，无法行动，昏迷
+    Normal, Exciting, DifficultMove, Incapacitated, Coma
+    //正常，战败，难以移动，拘束，昏迷
+}
+
+/// <summary>
+/// 性状态
+/// </summary>
+public enum NPCSpecialState
+{
+    None,
+    Desire, Sensitive,
+    //渴望，敏感
+    Exhausted,
+    //疲惫：体力耗尽时触发
 }
 
 //主角的状态
