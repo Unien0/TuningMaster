@@ -14,12 +14,12 @@ public class NPCDetails
 
 
     [Header("基础数据")]
-    [Header("体力,上限1000")]
-    [Range(0, 1000)] public int npcPhysical;
-    [Header("信赖,上限1000")]
-    [Range(0, 1000)] public int npcRely;
-    [Header("爱欲,上限1000")]
-    [Range(0, 1000)] public int npcEros;
+    [Header("体力,上限100")]
+    [Range(0, 100)] public int npcPhysical;
+    [Header("信赖,上限100")]
+    [Range(0, 100)] public int npcRely;
+    [Header("爱欲,上限100")]
+    [Range(0, 100)] public int npcEros;
     [Space(10)]
 
 
@@ -46,6 +46,9 @@ public class NPCDetails
     [Header("体能，体能影响调教的体力消耗以及受到反抗时的能力")]
     public int npcPhysicalFitness;
     [Range(0, 10)] public int npcPhysicalFitnessLevel;
+    [Header("感度，色欲增加的速度")]
+    public int npcSensitivity;
+    [Range(0, 10)] public int npcSensitivityLevel;
     [Header("S，施虐倾向，影响主动以及反抗的几率")]
     public int npcSadism;
     [Range(0, 10)] public int npcSadismLevel;

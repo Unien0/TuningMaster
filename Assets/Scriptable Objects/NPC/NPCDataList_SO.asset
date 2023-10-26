@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a42dd9a7a428246afc4c27e4382a4e, type: 3}
+  m_Name: NPCDataList_SO
+  m_EditorClassIdentifier: 
+  NPCDetailsList:
+  - npcID: 0
+    npcName: 
+    npcIcon: {fileID: 0}
+    npcOnWorldSprite: {fileID: 0}
+    npcDescription: 
+    npcPhysical: 0
+    npcRely: 0
+    npcEros: 0
+    fatigueStateType: 0
+    starvationType: 0
+    painStateType: 0
+    npcSpecialState: 0
+    npcPromiscuous: 0
+    npcPromiscuousLevel: 0
+    npcTechnique: 0
+    npcTechniqueLevel: 0
+    npcPhysicalFitness: 0
+    npcPhysicalFitnessLevel: 0
+    npcSadism: 0
+    npcSadismLevel: 0
+    npcMasochism: 0
+    npcMasochismLevel: 0
+    npcOralTechnique: 0
+    npcOralTechniqueLevel: 0
+    npcChestTechnique: 0
+    npcChestTechniqueLevel: 0
+    npcChiralityTechnique: 0
+    npcChiralityTechniqueLevel: 0
+    npcPudendalTechnique: 0
+    npcPudendalTechniqueLevel: 0
+    npcVestibularTechnique: 0
+    npcVestibularTechniqueLevel: 0
+    npcFootworkTechnique: 0
+    npcFootworkTechniqueLevel: 0
+    trackFieldSkill: 0
+    trackFieldSkillLevel: 0
+    eloquence: 0
+    eloquenceSkillLevel: 0
+    concealment: 0
+    concealmentSkillLevel: 0
+    houseworkSkill: 0
+    houseworkSkillLevel: 0
+    nurseSkill: 0
+    nurseSkillLevel: 0
+    identifySkill: 0
+    identifySkillLevel: 0
+    isDead: 0
