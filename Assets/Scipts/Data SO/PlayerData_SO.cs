@@ -47,9 +47,9 @@ public class PlayerData_SO : ScriptableObject
     [Header("学识，初始为0，学识影响学习能力与技术力，能使用更多道具")]
     public int knowledge;
     [Range(0, 10)] public int knowledgeLevel;
-    [Header("淫乱，初始为0，淫乱影响色情行为时的选项和结果以及诱惑时的成功率")]
-    public int promiscuous;
-    [Range(0, 10)] public int promiscuousLevel;
+    [Header("诱惑，初始为0，淫乱影响色情行为时的选项和结果以及诱惑时的成功率")]
+    public int temptation;
+    [Range(0, 10)] public int temptationLevel;
     [Space(10)]
 
 
@@ -72,28 +72,7 @@ public class PlayerData_SO : ScriptableObject
     [Header("鉴定，初始为0，用于在黑市发掘能力更高的npc")]
     public int identifySkill;
     [Range(0, 10)] public int identifySkillLevel;
-    [Space(10)]
 
-
-    [Header("性技，最高经验值未定，最高等级10级。用于提升相关部位的调教程度")]
-    [Header("口，初始为0")]
-    public int oralTechnique;
-    [Range(0, 10)] public int oralTechniqueLevel;
-    [Header("胸，初始为0")]
-    public int chestTechnique;
-    [Range(0, 10)] public int chestTechniqueLevel;
-    [Header("手，初始为0")]
-    public int chiralityTechnique;
-    [Range(0, 10)] public int chiralityTechniqueLevel;
-    [Header("阴部，初始为0")]
-    public int pudendalTechnique;
-    [Range(0, 10)] public int pudendalTechniqueLevel;
-    [Header("后庭，初始为0")]
-    public int vestibularTechnique;
-    [Range(0, 10)] public int vestibularTechniqueLevel;
-    [Header("脚，初始为0")]
-    public int footworkTechnique;
-    [Range(0, 10)] public int footworkTechniqueLevel;
 
 
 
