@@ -1,4 +1,12 @@
-﻿public enum PersonaType
+﻿public enum GameState//游戏状态
+{
+    Gameplay,
+    Paused,
+    GameOver,
+}
+
+
+public enum PersonaType
 {
 
 }

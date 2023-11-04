@@ -1,13 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
-public class PlayerStats : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
-    public PlayerData_SO PlayerData;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +15,4 @@ public class PlayerStats : MonoBehaviour
     {
         
     }
-
-  
 }
